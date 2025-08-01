@@ -1,11 +1,115 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Adding Styles</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1></h1>
-  </body>
-</html>
+/* styles.css */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #000; /* fallback color */
+  color: #fff;
+}
+
+/* Header styles */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+header img {
+  height: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Hero Section */
+main section:first-of-type {
+  background-image: url('./images/background.png'); /* replace with your actual file name */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 150px;
+  text-align: center;
+  position: relative;
+}
+
+main section:first-of-type h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main section:first-of-type span {
+  margin: 0 10px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+main section:first-of-type button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 14px;
+  color: white;
+  background: linear-gradient(90deg, #C271FF, #C271FF);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* "Learn from the pros" Section */
+main section:nth-of-type(2) {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #071629);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+main section:nth-of-type(2) h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+main section:nth-of-type(2) h2 span {
+  color: #C271FF;
+}
+
+/* Profile cards */
+main section:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(2) img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+main section:nth-of-type(2) h3 {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+main section:nth-of-type(2) p {
+  font-size: 14px;
+  color: #aaa;
+}
